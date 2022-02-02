@@ -19,4 +19,4 @@ scraping that can be bypassed using Selenium, however, I chose to use third part
 (proxycrawl.com) since I had some free credits. You need to enter your proxycrawl token value to
 tools/scraping_tools.py proxycrawl_token variable.
 
-In order to run the scraper, just run main.py file and it will print the results to the console
+In order to run the scraper, just run main.py file and it will print the results to the console.
