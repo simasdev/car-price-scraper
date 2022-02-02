@@ -2,6 +2,8 @@ from proxycrawl import CrawlingAPI
 import requests
 
 
+proxycrawl_token = ''
+
 def scrape(url):
     return requests.get(url).content
 
@@ -12,8 +14,8 @@ def scrape_local(file_path):
 
 
 def scrape_using_crawling_api(url):
-    token = ''
-    api = CrawlingAPI({'token': token})
+
+    api = CrawlingAPI({'token': proxycrawl_token})
     response = api.get(url)
     if response['status_code'] == 200:
         return response['body']
